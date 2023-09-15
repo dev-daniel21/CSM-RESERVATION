@@ -5,4 +5,4 @@ spring:
     import:
       - classpath:database.yml
 
-server.port: 8320
+server.port: 8330

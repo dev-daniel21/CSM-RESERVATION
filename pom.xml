@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.csm</groupId>
-	<artifactId>csm_reservation</artifactId>
+	<artifactId>csm-reservation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>csm_reservation</name>
+	<name>csm-reservation</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

@@ -14,3 +14,11 @@ At this moment this application uses following microservices:
 7. CSM-CloudServer
 
 # It is still in development
+
+Use to build docker image:
+
+    $ docker build -f ./Dockerfile -t csm-reservation .
+
+Use to run container from image:
+
+    $ docker run --name csm-reservation -p 8330:8330 -d csm-reservation
