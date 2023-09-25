@@ -1,15 +1,17 @@
 package com.csm.csm_reservation.domain.model;
 
+import lombok.Builder;
+
 import java.sql.Timestamp;
-import java.time.OffsetTime;
 
-class ReservationDomain {
+@Builder
+public record ReservationDomain(
+        String reservationId,
+        String projectName,
+        Timestamp startDate,
+        Timestamp endDate,
+        String reservationType
+) {
 
-    private String projectName;
-    private Timestamp startDate;
-    private Timestamp endDate;
-    private OffsetTime startAt;
-    private OffsetTime endAt;
 
-    private WorksTypeDomain worksTypeDomain;
 }

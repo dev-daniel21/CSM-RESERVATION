@@ -1,5 +1,6 @@
 package com.csm.csm_reservation.infrastructure.repository;
 
+import com.csm.csm_reservation.domain.model.ReservationDomain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -33,6 +34,15 @@ public class Reservation {
         this.startDate = startDate;
         this.endDate = endDate;
         this.reservationType = reservationType;
+    }
+
+    public static ReservationDomain toDomain(Reservation reservation) {
+        return new ReservationDomain(
+                reservation.reservationId,
+                reservation.projectName,
+                reservation.startDate,
+                reservation.endDate,
+                reservation.reservationType);
     }
 
 }

@@ -13,5 +13,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class ReservationResponse {
     private UUID reservationId;
+    private String message;
 
 }
